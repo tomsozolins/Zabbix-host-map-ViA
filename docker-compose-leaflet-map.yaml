@@ -1,0 +1,37 @@
+version: '3.7'
+services:  
+  leaflet-map:
+    image: leaflet-map
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "5000:5000"
+    secrets:
+     - ZABBIX_ENDPOINT
+     - ZABBIX_USER
+     - ZABBIX_PASS
+     - source: index_html
+       target: /templates/index.html
+     - source: index_js
+       target: /static/index.js
+     - source: leaflet_realtime_js
+       target: /static/leaflet-realtime.js
+    deploy:
+      mode: replicated
+      replicas: 1
+    
+  
+secrets:
+  ZABBIX_ENDPOINT:
+    file: ./.ZABBIX_ENDPOINT
+  ZABBIX_USER:
+    file: ./.ZABBIX_USER
+  ZABBIX_PASS:
+    file: ./.ZABBIX_PASS
+  index_html:
+    file: templates/index.html
+  index_js:
+    file: static/index.js
+  leaflet_realtime_js:
+    file: static/leaflet-realtime.js

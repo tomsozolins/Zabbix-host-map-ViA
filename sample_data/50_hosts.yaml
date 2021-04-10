@@ -1,0 +1,607 @@
+zabbix_export:
+  version: '5.2'
+  date: '2021-03-29T19:17:55Z'
+  groups:
+    -
+      name: geomap
+  hosts:
+    -
+      host: host1
+      name: host1
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type1
+        location_lat: '56.95501'
+        location_lon: '24.13161'
+        model: model1
+        vendor: vendor1
+    -
+      host: host2
+      name: host2
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type2
+        location_lat: '56.98592'
+        location_lon: '24.17382'
+        model: model2
+        vendor: vendor2
+    -
+      host: host3
+      name: host3
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type3
+        location_lat: '56.98087'
+        location_lon: '24.9637'
+        model: model3
+        vendor: vendor3
+    -
+      host: host4
+      name: host4
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type4
+        location_lat: '56.85131'
+        location_lon: '24.11810'
+        model: model4
+        vendor: vendor4
+    -
+      host: host5
+      name: host5
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type5
+        location_lat: '56.80081'
+        location_lon: '24.6251'
+        model: model5
+        vendor: vendor5
+    -
+      host: host6
+      name: host6
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type6
+        location_lat: '56.86978'
+        location_lon: '24.11420'
+        model: model6
+        vendor: vendor6
+    -
+      host: host7
+      name: host7
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type7
+        location_lat: '56.97616'
+        location_lon: '24.14938'
+        model: model7
+        vendor: vendor7
+    -
+      host: host8
+      name: host8
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type8
+        location_lat: '56.99231'
+        location_lon: '24.11330'
+        model: model8
+        vendor: vendor8
+    -
+      host: host9
+      name: host9
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type9
+        location_lat: '56.91166'
+        location_lon: '24.11863'
+        model: model9
+        vendor: vendor9
+    -
+      host: host10
+      name: host10
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type10
+        location_lat: '56.82632'
+        location_lon: '24.13459'
+        model: model10
+        vendor: vendor10
+    -
+      host: host11
+      name: host11
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type11
+        location_lat: '56.85439'
+        location_lon: '24.8779'
+        model: model11
+        vendor: vendor11
+    -
+      host: host12
+      name: host12
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type12
+        location_lat: '56.91184'
+        location_lon: '24.16697'
+        model: model12
+        vendor: vendor12
+    -
+      host: host13
+      name: host13
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type13
+        location_lat: '56.90407'
+        location_lon: '24.6246'
+        model: model13
+        vendor: vendor13
+    -
+      host: host14
+      name: host14
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type14
+        location_lat: '56.93513'
+        location_lon: '24.16870'
+        model: model14
+        vendor: vendor14
+    -
+      host: host15
+      name: host15
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type15
+        location_lat: '56.95562'
+        location_lon: '24.6255'
+        model: model15
+        vendor: vendor15
+    -
+      host: host16
+      name: host16
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type16
+        location_lat: '56.82386'
+        location_lon: '24.3791'
+        model: model16
+        vendor: vendor16
+    -
+      host: host17
+      name: host17
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type17
+        location_lat: '56.88225'
+        location_lon: '24.1588'
+        model: model17
+        vendor: vendor17
+    -
+      host: host18
+      name: host18
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type18
+        location_lat: '56.81649'
+        location_lon: '24.12867'
+        model: model18
+        vendor: vendor18
+    -
+      host: host19
+      name: host19
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type19
+        location_lat: '56.84486'
+        location_lon: '24.10211'
+        model: model19
+        vendor: vendor19
+    -
+      host: host20
+      name: host20
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type20
+        location_lat: '56.86594'
+        location_lon: '24.17045'
+        model: model20
+        vendor: vendor20
+    -
+      host: host21
+      name: host21
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type21
+        location_lat: '56.93607'
+        location_lon: '24.3607'
+        model: model21
+        vendor: vendor21
+    -
+      host: host22
+      name: host22
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type22
+        location_lat: '56.94949'
+        location_lon: '24.13016'
+        model: model22
+        vendor: vendor22
+    -
+      host: host23
+      name: host23
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type23
+        location_lat: '56.90420'
+        location_lon: '24.12680'
+        model: model23
+        vendor: vendor23
+    -
+      host: host24
+      name: host24
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type24
+        location_lat: '56.89959'
+        location_lon: '24.2300'
+        model: model24
+        vendor: vendor24
+    -
+      host: host25
+      name: host25
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type25
+        location_lat: '56.87530'
+        location_lon: '24.996'
+        model: model25
+        vendor: vendor25
+    -
+      host: host26
+      name: host26
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type26
+        location_lat: '56.85243'
+        location_lon: '24.4796'
+        model: model26
+        vendor: vendor26
+    -
+      host: host27
+      name: host27
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type27
+        location_lat: '56.84556'
+        location_lon: '24.13932'
+        model: model27
+        vendor: vendor27
+    -
+      host: host28
+      name: host28
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type28
+        location_lat: '56.90277'
+        location_lon: '24.8'
+        model: model28
+        vendor: vendor28
+    -
+      host: host29
+      name: host29
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type29
+        location_lat: '56.88832'
+        location_lon: '24.4470'
+        model: model29
+        vendor: vendor29
+    -
+      host: host30
+      name: host30
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type30
+        location_lat: '56.81888'
+        location_lon: '24.18972'
+        model: model30
+        vendor: vendor30
+    -
+      host: host31
+      name: host31
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type31
+        location_lat: '56.83874'
+        location_lon: '24.18464'
+        model: model31
+        vendor: vendor31
+    -
+      host: host32
+      name: host32
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type32
+        location_lat: '56.93247'
+        location_lon: '24.3379'
+        model: model32
+        vendor: vendor32
+    -
+      host: host33
+      name: host33
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type33
+        location_lat: '56.95211'
+        location_lon: '24.5938'
+        model: model33
+        vendor: vendor33
+    -
+      host: host34
+      name: host34
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type34
+        location_lat: '56.95544'
+        location_lon: '24.3623'
+        model: model34
+        vendor: vendor34
+    -
+      host: host35
+      name: host35
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type35
+        location_lat: '56.99257'
+        location_lon: '24.4845'
+        model: model35
+        vendor: vendor35
+    -
+      host: host36
+      name: host36
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type36
+        location_lat: '56.88487'
+        location_lon: '24.998'
+        model: model36
+        vendor: vendor36
+    -
+      host: host37
+      name: host37
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type37
+        location_lat: '56.95958'
+        location_lon: '24.13389'
+        model: model37
+        vendor: vendor37
+    -
+      host: host38
+      name: host38
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type38
+        location_lat: '56.81475'
+        location_lon: '24.402'
+        model: model38
+        vendor: vendor38
+    -
+      host: host39
+      name: host39
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type39
+        location_lat: '56.90977'
+        location_lon: '24.1992'
+        model: model39
+        vendor: vendor39
+    -
+      host: host40
+      name: host40
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type40
+        location_lat: '56.81571'
+        location_lon: '24.2516'
+        model: model40
+        vendor: vendor40
+    -
+      host: host41
+      name: host41
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type41
+        location_lat: '56.81929'
+        location_lon: '24.2602'
+        model: model41
+        vendor: vendor41
+    -
+      host: host42
+      name: host42
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type42
+        location_lat: '56.82628'
+        location_lon: '24.18884'
+        model: model42
+        vendor: vendor42
+    -
+      host: host43
+      name: host43
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type43
+        location_lat: '56.99630'
+        location_lon: '24.12540'
+        model: model43
+        vendor: vendor43
+    -
+      host: host44
+      name: host44
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type44
+        location_lat: '56.97399'
+        location_lon: '24.6256'
+        model: model44
+        vendor: vendor44
+    -
+      host: host45
+      name: host45
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type45
+        location_lat: '56.86742'
+        location_lon: '24.277'
+        model: model45
+        vendor: vendor45
+    -
+      host: host46
+      name: host46
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type46
+        location_lat: '56.87256'
+        location_lon: '24.13676'
+        model: model46
+        vendor: vendor46
+    -
+      host: host47
+      name: host47
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type47
+        location_lat: '56.98868'
+        location_lon: '24.15049'
+        model: model47
+        vendor: vendor47
+    -
+      host: host48
+      name: host48
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type48
+        location_lat: '56.88674'
+        location_lon: '24.10053'
+        model: model48
+        vendor: vendor48
+    -
+      host: host49
+      name: host49
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type49
+        location_lat: '56.97823'
+        location_lon: '24.9533'
+        model: model49
+        vendor: vendor49
+    -
+      host: host50
+      name: host50
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type50
+        location_lat: '56.86658'
+        location_lon: '24.343'
+        model: model50
+        vendor: vendor50

@@ -1,0 +1,19 @@
+zabbix_export:
+  version: '5.2'
+  date: '2021-03-27T16:24:36Z'
+  groups:
+    -
+      name: geomap
+  hosts:
+    -
+      host: host1
+      name: host1
+      groups:
+        -
+          name: geomap
+      inventory:
+        type: type1
+        location_lat: '56.954563'
+        location_lon: '24.107937'
+        model: model1
+        vendor: vendor1
