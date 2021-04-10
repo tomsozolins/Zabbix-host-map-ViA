@@ -2,7 +2,7 @@
 var map = L.map('map'),
     realtime = L.realtime(
         {
-        url: 'https://apex.oracle.com/pls/apex/tomsozolins/geo/geojson',
+        url: 'http://127.0.0.1:5000/geojson',
         crossOrigin: true,
         type: 'json'
     }, {

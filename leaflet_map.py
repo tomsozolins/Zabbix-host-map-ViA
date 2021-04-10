@@ -4,6 +4,7 @@ import time
 from contextlib import suppress
 from geojson import Feature, Point, FeatureCollection
 from flask import Flask, render_template
+from geojson import feature
 from geojson.feature import FeatureCollection
 from loguru import logger
 from pyzabbix import ZabbixAPI
@@ -72,10 +73,9 @@ def get_geojson():
             'host_type': host_type
             }
 
-            new_feature = Feature(geometry=Point((location_lat, location_lon)), properties=properties_dict)
+            new_feature = Feature(geometry=Point((location_lon, location_lat)), properties=properties_dict)
             feature_list.append(new_feature)
             feature_collection = FeatureCollection(feature_list)
-        
     return feature_collection
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
