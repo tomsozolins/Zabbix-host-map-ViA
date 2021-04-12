@@ -1,10 +1,8 @@
 import sys
-import threading
-import time
 from contextlib import suppress
-from geojson import Feature, Point, FeatureCollection
+
 from flask import Flask, render_template
-from geojson import feature
+from geojson import Feature, FeatureCollection, Point, feature
 from geojson.feature import FeatureCollection
 from loguru import logger
 from pyzabbix import ZabbixAPI
@@ -36,7 +34,7 @@ def get_zabbix_data():
 def get_geojson():
 
     zabbix_data = get_zabbix_data()
-    
+    feature_collection = ''
     # initial geojson feature list
     feature_list = []
     logger.info(f'Building GeoJSON data')
@@ -76,6 +74,7 @@ def get_geojson():
             new_feature = Feature(geometry=Point((location_lon, location_lat)), properties=properties_dict)
             feature_list.append(new_feature)
             feature_collection = FeatureCollection(feature_list)
+    
     return feature_collection
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
@@ -89,20 +88,6 @@ def fetch_geojson():
     return get_geojson()
 
 if __name__ == "__main__":
-    threading.Thread(target=app.run(host='0.0.0.0')).start()
+    app.run(host='0.0.0.0')
     
-# Daemon
-while True:
-    try:
-        logger.info('Fetching data from zabbix API')
-        start = time.time()
-        get_geojson()
-        end = time.time()
-        logger.info(f"Data fetch finished in {round(end - start, 2)} seconds")
-
-        logger.info(f'Next data fetch in 20 seconds...')
-        time.sleep(20)
-    except Exception as e:
-        logger.exception(f'{e}')
-        continue
 
