@@ -9,7 +9,7 @@
 - **Git - https://git-scm.com/download/linux**
 
 ## Architecture
-![Architecture](architecture.png)
+![Architecture](architecture.png | width=500)
 
 ## Clone repository
 ```console
