@@ -1,5 +1,6 @@
 # Zabbix host visualization in Leaflet map
-> Python application which pulls host data from Zabbix API, converts the data to GeoJSON and serves it as API endpoint to Leaflet based map using Realtime Leaflet plugin
+> Python application which pulls host data from Zabbix API, converts the data to GeoJSON and serves it as API endpoint.
+ Leaflet based map is displaying the GeoJSON data as Geo points and new data is periodically fetched using Realtime Leaflet plugin.
 
 ## Requirements
 - **Linux based server (minimum 1GB RAM/1vCPU, Oracle Cloud free instance can be used - https://www.oracle.com/cloud/free/#always-free)**
