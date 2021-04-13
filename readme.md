@@ -3,6 +3,7 @@
 
 ## Requirements
 - **Docker Swarm**
+- **Docker Compose**
 - **Git client**
 
 ## Clone repository
