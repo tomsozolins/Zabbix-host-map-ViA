@@ -4,6 +4,7 @@
 ## Requirements
 - **Docker Swarm**
 - **Docker Compose**
+- **Zabbix server v5.0 and up**
 - **Git client**
 
 ## Clone repository
@@ -11,7 +12,7 @@
 root@localhost:~ # git clone https://github.com/tomsozolins/leaflet-map.git
 ```
 
-## Zabbix installation
+## Zabbix installation (optional - existing installation can be used)
 ```console
 root@localhost:~ # docker stack deploy --compose-file=docker-compose-zabbix.yaml zabbix_stack
 ```
@@ -24,4 +25,4 @@ root@localhost:~ # docker stack deploy --compose-file=docker-compose-leaflet-map
 
 ## Usage
 - Access Leaflet map - http://127.0.0.1/
-- Access Geojson API - http://127.0.0.1/geojson
+- Access GeoJSON API - http://127.0.0.1/geojson
