@@ -2,7 +2,8 @@
 ![Zabbix and Leaflet](zabbix_leaflet.gif)
 
 ## Requirements
-- **Docker Swarm**
+- **Linux based server (minimum 1GB RAM/1vCPU, Oracle Cloud always free instance can be used - https://www.oracle.com/cloud/free/#always-free)**
+- **Docker Swarm - https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/**
 - **Docker Compose**
 - **Zabbix server v5.0 and up**
 - **Git client**
