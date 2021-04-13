@@ -12,7 +12,7 @@
 <img src="https://raw.githubusercontent.com/tomsozolins/Leaflet-map/master/architecture.png" width="500" height="655">
 
 ## Data flow diagram
-<img src="https://raw.githubusercontent.com/tomsozolins/Leaflet-map/master/data_flow.png" width="500" height="587">
+<img src="https://raw.githubusercontent.com/tomsozolins/Leaflet-map/master/data_flow.png" width="500" height="533">
 
 # Installation
 ## Clone repository
