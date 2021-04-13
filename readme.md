@@ -11,17 +11,22 @@
 ## Architecture
 <img src="https://raw.githubusercontent.com/tomsozolins/Leaflet-map/master/architecture.png" width="500" height="655">
 
+## Data flow
+<img src="https://raw.githubusercontent.com/tomsozolins/Leaflet-map/master/data_flow.png" width="500" height="587">
+
 ## Clone repository
 ```console
 root@localhost:~ # git clone https://github.com/tomsozolins/leaflet-map.git
 ```
 
 ## Zabbix installation (optional - existing installation can be used)
+- Change secret values in .MYSQL files
 ```console
 root@localhost:~ # docker stack deploy --compose-file=docker-compose-zabbix.yaml zabbix_stack
 ```
 
 ## Leaflet map installation
+- Change secret values in .ZABBIX files
 ```console
 root@localhost:~ # docker-compose -f docker-compose-leaflet-map.yaml build
 root@localhost:~ # docker stack deploy --compose-file=docker-compose-leaflet-map.yaml leaflet_stack
@@ -30,5 +35,4 @@ root@localhost:~ # docker stack deploy --compose-file=docker-compose-leaflet-map
 ## Usage
 ![Zabbix and Leaflet](zabbix_leaflet.gif)
 - Create hosts in Zabbix and add latitude/longitude data in host inventory
-- See the hosts automatically displayed in Leaflet map - http://127.0.0.1/
-- Leaflet fetches Zabbix dGeoJSON every 3 seconds from - http://127.0.0.1/geojson
+- See the hosts automatically displayed in Leaflet map - http://127.0.0.1:5000/
