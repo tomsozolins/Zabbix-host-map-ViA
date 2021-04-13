@@ -2,13 +2,13 @@ import sys
 from contextlib import suppress
 
 from flask import Flask, render_template
-from geojson import Feature, FeatureCollection, Point, feature
+from geojson import Feature, FeatureCollection, Point
 from geojson.feature import FeatureCollection
 from loguru import logger
 from pyzabbix import ZabbixAPI
 
 logger.remove()
-logger.add(sys.stdout, format="{time} {level} {message}", level="INFO", enqueue=True)
+logger.add(sys.stdout, format="{time} {level} {message}", level="INFO")
 
 try:
     with open('/var/run/secrets/ZABBIX_ENDPOINT') as f: zabbix_endpoint = f.read()
@@ -76,6 +76,7 @@ def get_geojson():
             feature_collection = FeatureCollection(feature_list)
     
     return feature_collection
+
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
