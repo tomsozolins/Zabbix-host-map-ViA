@@ -1,10 +1,10 @@
 FROM python:3.9-slim-buster
 
-ADD leaflet_map.py .
+ADD zabbix_host_map.py .
 
 RUN pip install --no-cache-dir pyzabbix
 RUN pip install --no-cache-dir flask
 RUN pip install --no-cache-dir loguru
 RUN pip install --no-cache-dir geojson
 
-CMD [ "python", "./leaflet_map.py"]
+CMD [ "python", "./zabbix_host_map.py"]

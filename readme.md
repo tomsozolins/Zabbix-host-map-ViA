@@ -9,15 +9,15 @@
 - **Git - https://git-scm.com/download/linux**
 
 ## Architecture
-<img src="https://raw.githubusercontent.com/tomsozolins/Leaflet-map/master/architecture.png" width="500" height="655">
+<img src="https://raw.githubusercontent.com/tomsozolins/Zabbix-host-map/master/architecture.png" width="500" height="655">
 
 ## Data flow diagram
-<img src="https://raw.githubusercontent.com/tomsozolins/Leaflet-map/master/data_flow.png" width="500" height="533">
+<img src="https://raw.githubusercontent.com/tomsozolins/Zabbix-host-map/master/data_flow.png" width="500" height="533">
 
 # Installation
 ## Clone repository
 ```console
-root@localhost:~ # git clone https://github.com/tomsozolins/leaflet-map.git
+root@localhost:~ # git clone https://github.com/tomsozolins/zabbix-host-map.git
 ```
 
 ## Zabbix installation (optional - existing installation can be used)
@@ -29,8 +29,8 @@ root@localhost:~ # docker stack deploy --compose-file=docker-compose-zabbix.yaml
 ## Leaflet map installation
 - Change secret values in .ZABBIX files
 ```console
-root@localhost:~ # docker-compose -f docker-compose-leaflet-map.yaml build
-root@localhost:~ # docker stack deploy --compose-file=docker-compose-leaflet-map.yaml leaflet_stack
+root@localhost:~ # docker-compose -f docker-compose-zabbix-host-map.yaml build
+root@localhost:~ # docker stack deploy --compose-file=docker-compose-zabbix-host-map.yaml zabbix_host_map_stack
 ```
 
 # Usage
