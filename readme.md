@@ -9,7 +9,7 @@
 - **Git - https://git-scm.com/download/linux**
 
 ## Architecture
-![Architecture](architecture.png | width=500)
+<img src="https://raw.githubusercontent.com/tomsozolins/Leaflet-map/master/architecture.png" width="200" height="400">
 
 ## Clone repository
 ```console
