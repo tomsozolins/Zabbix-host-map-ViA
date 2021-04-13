@@ -22,5 +22,5 @@ root@localhost:~ # docker stack deploy --compose-file=docker-compose-leaflet-map
 ```
 
 ## Usage
-- Access Leaflet map - http://<ip-addr>/
-- Access Geojson API - http://<ip-addr>/geojson
+- Access Leaflet map - http://127.0.0.1/
+- Access Geojson API - http://127.0.0.1/geojson
