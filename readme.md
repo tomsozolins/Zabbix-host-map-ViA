@@ -14,6 +14,13 @@
 ## Data flow diagram
 <img src="https://raw.githubusercontent.com/tomsozolins/Zabbix-host-map/master/data_flow.png" width="500" height="533">
 
+## How it works
+- When application is started Flask web service is started. It serves two endpoinds - Leaflet map and Geojson API.
+- When Leaflet map is accessed via browser, the page fetches GeoJSON API endpoint every 3 seconds to get the latest data. GeoJSON fetching is done using Leaflet Realtime plugin - https://github.com/perliedman/leaflet-realtime. This plugin provides the ability to update Leaflet map data without refreshing the page. This makes the map feel like it's working realtime.
+- Additionally Leaflet map is provided with 3 Tile layers to choose from - Regular Open Street base tile, Stadia_OSMBright tile - http://leaflet-extras.github.io/leaflet-providers/preview/ and WMS based tile Latvia Administrative Teritories 2021 - https://geolatvija.lv/geo/p/658
+- When any of the Geo points are clicked, a popup is showing table data about the Zabbix host. The data is gathered using Zabbix API.
+
+
 # Installation
 ## Clone repository
 ```console
