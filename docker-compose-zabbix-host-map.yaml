@@ -15,13 +15,14 @@ services:
        target: /templates/index.html
      - source: index_js
        target: /static/index.js
+     - source: style.css
+       target: /static/style.css
      - source: leaflet_realtime_js
        target: /static/leaflet-realtime.js
     deploy:
       mode: replicated
       replicas: 1
     
-  
 secrets:
   ZABBIX_ENDPOINT:
     file: ./.ZABBIX_ENDPOINT
