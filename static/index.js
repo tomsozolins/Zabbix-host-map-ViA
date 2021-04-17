@@ -1,7 +1,7 @@
 var map = L.map('map'),
     realtime = L.realtime(
         {
-        url: 'http://127.0.0.1:5000/geojson',
+        url: 'http://130.61.38.99:5000/geojson',
         crossOrigin: true,
         type: 'json'
     }, 
