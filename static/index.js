@@ -38,7 +38,7 @@ var basemaps = {
         format: 'image/png',
         opacity: 0.5
     }),
-    Stadia_OSMBright: L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
+    Stadia_OSMBright: L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=26a9f45c-2063-44ee-afe8-dfd95eca2d78', {
 	maxZoom: 20,
 	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     }),
