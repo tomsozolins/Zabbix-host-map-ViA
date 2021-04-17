@@ -15,10 +15,10 @@ services:
        target: /templates/index.html
      - source: index_js
        target: /static/index.js
-     - source: style.css
-       target: /static/style.css
      - source: leaflet_realtime_js
        target: /static/leaflet-realtime.js
+     - source: style.css
+       target: /static/style.css
     deploy:
       mode: replicated
       replicas: 1
@@ -36,3 +36,5 @@ secrets:
     file: static/index.js
   leaflet_realtime_js:
     file: static/leaflet-realtime.js
+  style_css:
+    file: static/style.css
