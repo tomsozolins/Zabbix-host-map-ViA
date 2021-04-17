@@ -17,7 +17,7 @@ services:
        target: /static/index.js
      - source: leaflet_realtime_js
        target: /static/leaflet-realtime.js
-     - source: style.css
+     - source: style_css
        target: /static/style.css
     deploy:
       mode: replicated
