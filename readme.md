@@ -36,6 +36,7 @@ root@localhost:~ # docker stack deploy --compose-file=docker-compose-zabbix.yaml
 ## Leaflet map installation
 - Change secret values in .ZABBIX files
 - Change geojson url in static/index.js
+- Get API key from https://stadiamaps.com/ and add it to index.js Stadia_OSMBright tile layer url (example - https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key='apikeyhere')
 ```console
 root@localhost:~ # docker-compose -f docker-compose-zabbix-host-map.yaml build
 root@localhost:~ # docker stack deploy --compose-file=docker-compose-zabbix-host-map.yaml zabbix_host_map_stack
