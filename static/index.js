@@ -16,6 +16,7 @@ var map = L.map('map'),
         }).addTo(map);
 
 map.setView([56.946285, 24.105078], 10)
+L.control.scale().addTo(map);
 
 var geojsonMarkerOptions = {
     radius: 8,
